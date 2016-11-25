@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.uottawa.cookhelper.AddRecipe"
+    android:keepScreenOn="false">
+
+    <Spinner
+        android:layout_width="150dp"
+        android:id="@+id/prepTimeDropdownText"
+        android:layout_height="40dp"
+        android:layout_below="@+id/enterDescriptionText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:entries="@array/prepTime_array" />
+
+    <Button
+        android:text="@string/next"
+        android:id="@+id/nextButton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        tools:ignore="UnknownId"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/nameText"
+        android:layout_toEndOf="@+id/nameText" />
+
+    <Spinner
+        android:id="@+id/typeDropDown"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/type_array"
+        android:layout_below="@+id/selectionText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scrollbars="vertical"
+        tools:scrollbars="vertical" />
+
+    <Spinner
+        android:id="@+id/categoryDropdown"
+        android:layout_height="20dp"
+        android:layout_width="150dp"
+        android:entries="@array/category_array"
+        android:layout_alignBaseline="@+id/typeDropDown"
+        android:layout_alignBottom="@+id/typeDropDown"
+        android:layout_toLeftOf="@+id/uploadPhotoButton"
+        android:layout_toStartOf="@+id/uploadPhotoButton"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:text="@string/upload_photo"
+        android:id="@+id/uploadPhotoButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/typeDropDown"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_alignEnd="@+id/nextButton"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_height="40dp"
+        android:layout_below="@+id/avatarImage"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:id="@+id/enterRecipeNameText"
+        android:hint="@string/please_enter_a_recipe_name"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_height="35dp"
+        android:text="@string/spaghetti_carbonara"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/uploadPhotoButton"
+        android:layout_alignLeft="@+id/enterDescriptionText"
+        android:layout_alignStart="@+id/enterDescriptionText" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterDescriptionText"
+        android:hint="@string/please_enter_a_description"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:text="@string/classic_italian_dish"
+        android:layout_below="@+id/enterRecipeNameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:text="@string/description"
+        android:ems="10"
+        android:id="@+id/descriptionText"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/enterRecipeNameText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/please_select_a_category_or_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectionText"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:text="@string/edit_a_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addRecipeTitle"
+        android:textStyle="normal|bold"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/darker_gray"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:text="@string/preparation_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prepTime"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/prepTimeDropdownText"
+        android:layout_alignBottom="@+id/prepTimeDropdownText"
+        android:layout_alignLeft="@+id/categoryDropdown"
+        android:layout_alignStart="@+id/categoryDropdown"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="@string/cooking_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cookingTimeText"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/cookingTimeDropdown"
+        android:layout_alignBottom="@+id/cookingTimeDropdown"
+        android:layout_alignLeft="@+id/prepTime"
+        android:layout_alignStart="@+id/prepTime" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:id="@+id/cookingTimeDropdown"
+        android:layout_height="40dp"
+        android:entries="@array/cookTime_array"
+        android:layout_below="@+id/prepTimeDropdownText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:id="@+id/caloriesDropdown"
+        android:layout_height="40dp"
+
+        android:entries="@array/calorie_array"
+        android:layout_below="@+id/cookingTimeDropdown"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caloriesText"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/caloriesDropdown"
+        android:layout_alignBottom="@+id/caloriesDropdown"
+        android:layout_alignLeft="@+id/cookingTimeText"
+        android:layout_alignStart="@+id/cookingTimeText" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_logo_01"
+        android:id="@+id/avatarImage"
+        android:contentDescription=""
+        android:onClick="OnSetAvatarButton"
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/enterRecipeNameText"
+        android:layout_toLeftOf="@+id/descriptionText"
+        android:layout_toStartOf="@+id/descriptionText" />
+
+</RelativeLayout>

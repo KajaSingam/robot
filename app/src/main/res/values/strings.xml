@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">CookHelper</string>
+    <string name="select_category_or_type">Select category or type</string>
+    <string name="text">Select category or type:</string>
+    <string name="food">food</string>
+    <string name="please_enter_a_description">(Please enter a description)</string>
+    <string name="please_enter_a_recipe_name">(Please enter a recipe name)</string>
+    <string name="calories">Calories</string>
+    <string name="cooking_time">Cooking time</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="select_a_category_or_type">Select a category or type:</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="save">save</string>
+    <string name="spaghetti_carbonara">Spaghetti Carbonara</string>
+    <string name="classic_italian_dish">Classic italian dish made with eggs, cheese, bacon and pepper. </string>
+    <string name="add_a_recipe">Add A Recipe</string>
+    <string name="please_select_a_category_or_type">Please select a category or type:</string>
+    <string name="adding_a_recipe">Add a recipe</string>
+    <string name="select_a_photo">Select a photo:</string>
+    <string name="selecting_a_category_or_type">Select a category or type:</string>
+    <string name="selecting_a_photo">Select a photo:</string>
+    <string name="help_page">Help Page</string>
+    <string name="welcome_to_cook_helper"> Welcome to the Cook Helper application! </string>
+    <string name="cook_helper_description"> With Cook Helper you can add new recipes, search for recipes based on its category or type and edit or delete a recipe with a simple interface! </string>
+    <string name="add_a_new_recipe"> 1. Adding a new recipe\n </string>
+    <string name="how_to_add_new_recipe"> From the add a recipe page you can select the recipe category and type from the drop down menu and choose to select a photo to represent the recipe or upload your own photo.
+        Enter your new recipe name and description and select its cooking time, preparation time and number of calories from the drop down menus.</string>
+    <string name="find_a_recipe">2. Finding a recipe</string>
+    <string name="find_recipe_description">From the find a recipe page, you can enter ingredients in the search bar and select a category or type of the recipe you are searching for. Select the view button to display the recipe.</string>
+    <string name="_3_editing_a_recipe">3. Editing and deleting a recipe</string>
+    <string name="editingARecipe">From the recipe view page, you can modify the recipe information by selecting the pencil icon in the top right corner or select the X icon to delete the recipe.
+        This will bring you to the edit page where you can modify the recipe category, type, name, description, photo, ingredients and instructions. </string>
+    <string name="preparation_time">Preparation time</string>
+    <string name="edit_a_recipe">Edit a Recipe</string>
+
+
+    <string-array name="category_array">
+        <item>Dinner</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Baking</item>
+        <item>Quick Meal</item>
+    </string-array>
+
+    <string-array name="type_array">
+        <item>Italian</item>
+        <item>Western</item>
+        <item>Mexican</item>
+        <item>Chinese</item>
+        <item>Vegetarian</item>
+    </string-array>
+
+
+    <string-array name="prepTime_array">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25+ minutes</item>
+    </string-array>
+
+    <string-array name="cookTime_array">
+        <item>30 minutes</item>
+        <item>15 minutes </item>
+        <item>45 minutes</item>
+        <item>60 minutes</item>
+        <item>90+ minutes</item>
+    </string-array>
+
+    <string-array name="calorie_array">
+        <item>under 300 </item>
+        <item>under 400 </item>
+        <item>under 100 </item>
+        <item>under 200 </item>
+        <item>under 300 </item>
+        <item>under 500 </item>
+    </string-array>
+
+</resources>
